@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <title>Document</title>
+  </head>
+  <body style="font-family: 'Otomanopee One';">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark py-3 fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand">Foo Bar</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#Hello" class="nav-link">Hello</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Bello" class="nav-link">Bello</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Buffalo" class="nav-link">Buffalo</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Sections to go-->
+    <section class="bg-dark text-light p-5 text-center text-sm-start mt-5">
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+            <h1>
+              Hello <span class="text-warning">Alls</span>
+              <i class="bi-alarm"></i>
+            </h1>
+            <p class="lead my-4">
+              Hello,this is all that we could be learning can't help me ask
+              someone else
+            </p>
+            <button
+              class="btn btn-primary btn-lg"
+              data-bs-toggle="modal"
+              data-bs-target="#enroll"
+            >
+              Join now?
+            </button>
+          </div>
+          <img
+            src="https://images.unsplash.com/photo-1573495612937-f01934eeaaa7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+            class="d-none d-sm-block img-fluid w-50"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!--Newsletter for the sake of it-->
+    <section class="bg-primary text-light p-5">
+      <div class="container">
+        <div class="d-sm-flex justify-content-between align-items-center">
+          <h3 class="mb-3 mb-md-0">Sign-up for our newsletter</h3>
+          <div class="input-group mb-3 news-input">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Email Adress"
+            />
+            <button type="button" class="btn btn-dark btn-lg">Button</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Boxes of the boxes-->
+
+    <section class="p-5">
+      <div class="container">
+        <div class="row text-center g-4">
+          <div class="col-md">
+            <div class="card bg-dark text-light">
+              <div class="card-body">
+                <div class="h1"><i class="bi bi-truck"></i></div>
+                <div class="mt-3 card-title h2">Trucks</div>
+                <div class="card-text mt-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Minima, doloribus?
+                </div>
+                <a href="#" class="btn btn-primary mt-3">Take me</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-primary text-light">
+              <div class="card-body">
+                <div class="h1"><i class="bi bi-tsunami"></i></div>
+                <div class="mt-3 card-title h2">Tsunami</div>
+                <div class="card-text mt-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Minima, doloribus?
+                </div>
+                <a href="#" class="btn btn-dark mt-3">Take me</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-dark text-light">
+              <div class="card-body">
+                <div class="h1"><i class="bi bi-building"></i></div>
+                <div class="mt-3 card-title h2">Buildings</div>
+                <div class="card-text mt-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Minima, doloribus?
+                </div>
+                <a href="#" class="btn btn-primary mt-3">Take me</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Hello Section-->
+
+    <section id="Hello" class="p-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-center g-4">
+          <div class="col-md bg-dark text-light p-5">
+            <h2 class="pb-2">Helloness</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+              magni architecto esse labore dolorem expedita laboriosam tempora
+              vitae odio minima!
+            </p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem
+              repudiandae beatae quas obcaecati!
+            </p>
+
+            <a href="#" class="btn btn-light btn-lg"
+              ><i class="bi bi-emoji-laughing-fill"></i> Apply</a
+            >
+          </div>
+          <div class="col-md">
+            <img
+              src="https://images.unsplash.com/photo-1612299065617-f883adb67bd1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Question Accordian-->
+
+    <section id="Bello" class="p-5">
+      <div class="container">
+        <h2 class="text-center mb-4">The Beautifull Bellos</h2>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                Bello?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Bello is a universal feeling caught by all of us at some point
+                of time
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                Bello Bello <3
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">Bello is a universal feeling</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                Bello Bello Bello Dirty Fellow
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">Bello is a universal feeling</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Buffaloes-->
+
+    <section id="Buffalo" class="bg-primary p-5">
+      <div class="container">
+        <h2 class="text-center text-light mb-5">Our Buffaloes</h2>
+        <div class="row g-4 row-eq-height">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="https://images.unsplash.com/photo-1508605375977-9fe795aea86a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=574&q=80"
+                  class="img-fluid rounded-circle mb-3 buffaloimg"
+                />
+                <h3 class="card-title mb-3">Hamasaki Sachiko</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorum, cupiditate.
+                </p>
+                <a href="#" class="btn"
+                  ><i class="bi bi-instagram text-dark h3"></i></a
+                ><a href="#" class="btn"
+                  ><i class="bi bi-linkedin text-dark h3"></i></a
+                ><a href="#" class="btn"
+                  ><i class="bi bi-discord text-dark h3"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="https://images.unsplash.com/photo-1575414914265-ebc9aa2637f4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80"
+                  class="img-fluid rounded-circle mb-3 buffaloimg"
+                />
+                <h3 class="card-title mb-3">Egbert Wintringham</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorum, cupiditate.
+                </p>
+                <a href="#" class="btn"
+                  ><i class="bi bi-instagram text-dark h3"></i></a
+                ><a href="#" class="btn"
+                  ><i class="bi bi-linkedin text-dark h3"></i></a
+                ><a href="#" class="btn"
+                  ><i class="bi bi-discord text-dark h3"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="https://images.unsplash.com/photo-1565013371592-80cb53eeca79?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=741&q=80"
+                  class="img-fluid rounded-circle mb-3 buffaloimg"
+                />
+                <h3 class="card-title mb-3">Cecilia Cantrell</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorum, cupiditate.
+                </p>
+                <a href="#" class="btn"
+                  ><i class="bi bi-instagram text-dark h3"></i></a
+                ><a href="#" class="btn"
+                  ><i class="bi bi-linkedin text-dark h3"></i></a
+                ><a href="#" class="btn"
+                  ><i class="bi bi-discord text-dark h3"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="https://images.unsplash.com/photo-1571406252275-7c8f54e3a8e7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
+                  class="img-fluid rounded-circle mb-3 buffaloimg"
+                />
+                <h3 class="card-title mb-3">Eileen Barnett</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorum, cupiditate.
+                </p>
+
+                <a href="#" class="btn"
+                  ><i class="bi bi-instagram text-dark h3"></i></a
+                ><a href="#" class="btn"
+                  ><i class="bi bi-linkedin text-dark h3"></i></a
+                ><a href="#" class="btn"
+                  ><i class="bi bi-discord text-dark h3"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Contact & Map-->
+    <section class="p-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md">
+            <div class="text-center mb-4 h2">Contact Info</div>
+            <ul class="list-group list-group-flush lead">
+              <li class="list-group-item">
+                <span class="fw-bold">Martini: </span>400 street North
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Bartini: </span>Lorem, ipsum.
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Vartini: </span>Lorem, ipsum dolor.
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Wartini: </span>Lorem ipsum dolor sit amet
+                consectetur.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer of the feet-->
+    <footer class="p-5 bg-dark text-center text-light text-muted">
+      <div class="container">
+        <p class="lead">Copyright &copy; Anupreet Singh</p>
+        <a href="#"><i class="bi bi-arrow-up-circle h1"></i></a>
+      </div>
+    </footer>
+    <div
+      class="modal fade"
+      id="enroll"
+      tabindex="-1"
+      aria-labelledby="enrollLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="enrollLabel">
+              Why Now? Live your life
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Anyway Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Distinctio excepturi ea ipsum, mollitia numquam eius tempore
+            repudiandae reiciendis vel amet atque quidem aspernatur
+            necessitatibus maiores possimus consequuntur placeat corporis sunt.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

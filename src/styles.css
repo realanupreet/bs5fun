@@ -1,0 +1,21 @@
+body {
+  font-family: sans-serif;
+}
+@media (min-width: 768px) {
+  .news-input {
+    width: 50%;
+  }
+}
+
+.buffaloimg {
+  object-fit: cover;
+  height: 30vw;
+  width: 30vw;
+}
+@media only screen and (min-width: 992px) {
+  .buffaloimg {
+    object-fit: cover;
+    height: 10vw;
+    width: 10vw;
+  }
+}
